@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	section(class="full-height text-center" id="main-content")
+		div(class="data")
+			div(class="col-md-3 center-block no-float top-space")
+					img(src="images/books.png" class="animated fadeIn")
+					h1(class="pacifico big green animated fadeIn delay-1") My library
+					div(class="animated fadeInDown delay-2")
+						h2 Keep it simple, stupid!
+
+						nav
+							a(href="/list" class="right-space") List
+							a(href="/add" class="right-space") Add book
+							a(href="/about" class="right-space") About
