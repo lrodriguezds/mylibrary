@@ -1,15 +1,22 @@
 extends layout
 
 block content
-	section(class="full-height text-center" id="main-content")
+	section(class="full-height" id="main-content")
 		div(class="data")
-			div(class="col-md-3 center-block no-float top-space")
-				
-				nav
-					a(href="/")
-						img(src="images/books.png" class="animated" width="40")
-					a(href="/list" class="right-space") List
-					a(href="/add" class="right-space") Add book
-					a(href="/about" class="right-space") About
+			br
+			div(class="col-md-3 center-block no-float")
 
-				robert
+				div(class="center-block")
+					ul(class="nav nav-pills")						
+						li(role="presentation" class="active")
+							a(href="/list") Book List
+						li(role="presentation" class="")
+							a(href="/add") Add a book
+						li(role="presentation" class="")
+							a(href="/about") About
+			br
+			div(class="col-md-5 center-block no-float")
+				div(class="panel panel-default")
+					div(class="panel-heading")
+						h3(class="panel-title") Panel title
+					div(class="panel-body") Panel content

@@ -10,4 +10,13 @@ router.get('/list', function(req, res, next) {
   res.render('book-list', { title: 'Express list' });
 });
 
+router.get('/add', function(req, res, next) {
+  res.render('add-book', { title: 'Express list' });
+});
+
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'Express list' });
+});
+
 module.exports = router;
