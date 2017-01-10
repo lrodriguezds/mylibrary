@@ -3,13 +3,19 @@ extends layout
 block content
 	section(class="full-height text-center" id="main-content")
 		div(class="data")
-			div(class="col-md-3 center-block no-float top-space")
+			div(class="col-md-3 center-block no-float")
 					img(src="images/books.png" class="animated fadeIn")
 					h1(class="pacifico big green animated fadeIn delay-1") My library
+					br
 					div(class="animated fadeInDown delay-2")
-						h2 Keep it simple, stupid!
+						h4 A Node.js web app for beginners!
 
-						nav
-							a(href="/list" class="right-space") List
-							a(href="/add" class="right-space") Add book
-							a(href="/about" class="right-space") About
+					div(class="col-md-12 center-block no-float")
+						div(class="center-block")
+							ul(class="nav nav-pills")						
+								li(role="presentation" class="")
+									a(href="/list") Book List
+								li(role="presentation" class="")
+									a(href="/add") Add a book
+								li(role="presentation" class="")
+									a(href="/about") About

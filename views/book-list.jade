@@ -3,18 +3,22 @@ extends layout
 block content
 	section(class="full-height" id="main-content")
 		div(class="data")
-			br
-			div(class="col-md-3 center-block no-float")
+			
+			include menu.jade
 
-				div(class="center-block")
-					ul(class="nav nav-pills")						
-						li(role="presentation" class="active")
-							a(href="/list") Book List
-						li(role="presentation" class="")
-							a(href="/add") Add a book
-						li(role="presentation" class="")
-							a(href="/about") About
 			br
+			div(class="col-md-5 center-block no-float")
+				div(class="panel panel-default")
+					div(class="panel-heading")
+						h3(class="panel-title") Panel title
+					div(class="panel-body") Panel content
+			
+			div(class="col-md-5 center-block no-float")
+				div(class="panel panel-default")
+					div(class="panel-heading")
+						h3(class="panel-title") Panel title
+					div(class="panel-body") Panel content
+			
 			div(class="col-md-5 center-block no-float")
 				div(class="panel panel-default")
 					div(class="panel-heading")

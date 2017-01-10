@@ -1,0 +1,18 @@
+br
+div(class="col-md-5 center-block no-float")
+	
+	div(class="center-block")
+		ul(class="nav nav-pills")						
+			li(role="presentation" class="")
+				a(href="/") Home
+
+			- var btnlist = (btnListActive == true ? "active" : "")
+			- var btnadd = (btnAddActive == true ? "active" : "")
+			- var btnabout = (btnAboutActive == true ? "active" : "")
+				
+			li(role="presentation" class="#{btnlist}")
+				a(href="/list") Book List
+			li(role="presentation" class="#{btnadd}")
+				a(href="/add") Add a book
+			li(role="presentation" class="#{btnabout}")
+				a(href="/about") About
