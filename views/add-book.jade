@@ -11,6 +11,17 @@ block content
 				div(class="panel panel-default")
 					div(class="panel-heading")
 						h3(class="panel-title") Let's add a book!
-					div(class="panel-body") New book form
+					div(class="panel-body") 
+						form
+							div(class="form-group")
+								label(for="exampleInputEmail1") Title
+								input(type="text" class="form-control" id="exampleInputEmail1")
+
+							div(class="form-group")
+								label Description
+								textarea(class="form-control" rows="3")
+
+							button(type="submit" class="btn btn-default") Submit
+
 			
 			
