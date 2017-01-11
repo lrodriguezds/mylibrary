@@ -3,7 +3,7 @@ extends layout
 block content
 	section(class="full-height" id="main-content")
 		div(class="data")
-			
+
 			include menu.jade
 
 			br
@@ -11,15 +11,15 @@ block content
 				div(class="panel panel-default")
 					div(class="panel-heading")
 						h3(class="panel-title") Let's add a book!
-					div(class="panel-body") 
-						form
+					div(class="panel-body")
+						form(method="POST" action="/add")
 							div(class="form-group")
 								label(for="exampleInputEmail1") Title
-								input(type="text" class="form-control" id="exampleInputEmail1")
+								input(type="text" class="form-control" name="title")
 
 							div(class="form-group")
 								label Description
-								textarea(class="form-control" rows="3")
+								textarea(class="form-control" rows="3" name="description")
 
 							button(type="submit" class="btn btn-default") Submit
 
