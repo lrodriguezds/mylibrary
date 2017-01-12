@@ -5,12 +5,10 @@ block content
 		div(class="data")
 			
 			include menu.jade
-
 			br
-			- for (var i = 0; i < 3; ++i) {
+			each book in books
 				div(class="col-md-5 center-block no-float")
 					div(class="panel panel-default")
 						div(class="panel-heading")
-							h3(class="panel-title") Martín Fierro
-						div(class="panel-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at velit consequat, consequat diam eu, dignissim ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse feugiat nulla ut ipsum porttitor, sed mattis felis sagittis. Donec sit amet luctus lectus. Duis semper lobortis placerat. Praesent ut tellus a ligula tincidunt hendrerit vel vitae sem. Nullam diam augue, malesuada dictum neque quis, venenatis vehicula dolor.
-			- }
+							h3(class="panel-title")= book.title
+						div(class="panel-body")= book.description
